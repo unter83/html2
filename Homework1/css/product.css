@@ -1,0 +1,26 @@
+.poduct_header {
+  background-color: #F8F3F4;
+  height: 148px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.player {
+  height: 777px;
+  width: 100%;
+  background-color: #F7F7F7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.product_box {
+  position: absolute;
+  z-index: 1;
+  top: 860px;
+  height: 601px;
+  margin-left: 239px;
+  margin-right: 239px;
+  background-color: red;
+}/*# sourceMappingURL=product.css.map */
