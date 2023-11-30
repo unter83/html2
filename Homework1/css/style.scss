@@ -1,7 +1,4 @@
-$prime-color: #222;
-$second-color: #F16D7F;
-$third-color: black;
-$bg-color: #fff;
+@import 'vars';
 
 * {
     margin: 0px;
@@ -12,8 +9,8 @@ $bg-color: #fff;
 a {text-decoration: none;}
 
 .center {
-    padding-left: calc(50% - 570px);
-    padding-right: calc(50% - 570px);
+    padding-left: 15%;
+    padding-right: 15%;
 }
 
 
@@ -157,6 +154,10 @@ a {text-decoration: none;}
 
 .font__text_future {
     font-size: 20px;
+}
+
+.font__18 {
+    font-size: 18px;
 }
 
 .font__s {
@@ -607,7 +608,7 @@ footer {
 
 .submenu a {
     text-decoration: none;
-    color: #6F6E6E;
+    color: $color-text;
     font-family: Lato;
     font-size: 14px;
     font-style: normal;

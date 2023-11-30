@@ -9,8 +9,8 @@ a {
 }
 
 .center {
-  padding-left: calc(50% - 570px);
-  padding-right: calc(50% - 570px);
+  padding-left: 15%;
+  padding-right: 15%;
 }
 
 .top {
@@ -137,6 +137,10 @@ a {
 
 .font__text_future {
   font-size: 20px;
+}
+
+.font__18 {
+  font-size: 18px;
 }
 
 .font__s {
