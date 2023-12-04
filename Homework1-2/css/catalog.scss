@@ -1,0 +1,134 @@
+@import 'vars';
+
+summary {
+    display: block;
+  }
+  
+  summary::-webkit-details-marker {
+    display: none;
+  }
+
+.filter {
+
+    padding-top: 13px;
+    width: 360px;
+    // margin-top: 51px;
+    box-sizing: border-box;
+    position: relative;
+    z-index: 10;
+
+    &[open] path {
+        fill: $second-color;
+    }
+
+    &[open] {
+        background: $bg-color;
+        box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+        
+    }
+    &_summary {
+        display: flex;
+        align-items: center;
+        gap: 11px;
+        margin-top: 13px;
+        margin-left: 16px;
+        margin-bottom: 16px;
+    }
+
+    &_sort {
+        height: 132px;
+        display: flex;
+        gap: 16px;
+        padding-top: 39px;
+        box-sizing: border-box;
+    }
+
+    &_content {
+        background-color: $bg-color;
+        padding: 0px 16px 16px 16px;
+    }
+
+    &_link-box{
+        display: flex;
+        flex-direction: column;
+        gap: 11px;
+        padding: 24px 16px;
+    }    
+    
+    
+    &_heading {
+        color: $third-color;
+    }
+
+    &[open] .filter_heading {
+        color: $second-color;
+    }
+
+    &_sub-heading {
+        color: $color-text;
+        padding: 8px 11px 11px 11px;
+        border-bottom: 1px solid #EBEBEB;
+        border-left: 6px solid $second-color;
+    }
+
+
+    // &__sub-heading{
+    //     padding: 8px 11px 11px 11px;
+    //     border-bottom: 1px solid #EBEBEB;
+    //     border-left: 6px solid $second-color;
+    // }
+
+    &_item[open] .filter_sub-heading {
+        color: $second-color;
+    }
+
+    &_link:hover {
+        color: $second-color;
+    }
+
+}
+
+.sort {
+    padding-top: 26px;
+    display: flex;
+    gap: 29px;
+    // position: absolute;
+    // left: 490px;
+    // top: 51px;
+
+    &_details {
+        position: relative;
+    }
+
+    &_summary {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        
+    }
+
+    &_box {
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+        background: $bg-color;
+        box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+        padding: 7px 30px 11px 9px;
+        position: absolute;
+        z-index: 10;
+        left: -9px;
+        top: 20px;
+    }
+
+    &_check {
+        display:flex;
+        gap: 9px;
+        align-items: center;
+        ;
+    }
+
+}
+
+
+
+

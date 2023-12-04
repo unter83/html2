@@ -120,4 +120,11 @@
   display: grid;
   grid-template-columns: repeat(3, 360px);
   justify-content: center;
+}
+.product_block_mosaic_big {
+  margin-bottom: 128px;
+  gap: 30px;
+  display: grid;
+  grid-template-columns: repeat(3, 360px);
+  justify-content: center;
 }/*# sourceMappingURL=product.css.map */

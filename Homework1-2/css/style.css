@@ -94,11 +94,17 @@ a {
   color: #FBFBFB;
 }
 .color8 {
-  color: #636363;
+  color: #6F6E6E;
 }
 
 .lato {
-  font-family: Lato;
+  font-family: Lato, sans-serif;
+  font-style: normal;
+  line-height: normal;
+}
+
+.roboto {
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   line-height: normal;
 }
@@ -109,6 +115,10 @@ a {
 
 .normal {
   font-weight: 700;
+}
+
+.normal600 {
+  font-weight: 600;
 }
 
 .thin {
@@ -477,11 +487,6 @@ footer {
   fill: white;
 }
 
-.submenu {
-  width: 0px;
-  height: 0px;
-}
-
 .icon1 {
   margin-top: 7px;
 }
@@ -494,17 +499,6 @@ footer {
   display: flex;
   justify-content: flex-start;
   z-index: 1;
-}
-
-.submenu {
-  display: flex;
-  flex-direction: column;
-  margin-top: 21px;
-  background-color: white;
-  width: 212px;
-  height: 634px;
-  z-index: 1;
-  box-shadow: -5px 5px 15px black;
 }
 
 .submenu_link:hover .dropdown-content {
@@ -702,4 +696,29 @@ footer {
   .dropdown-content {
     left: -90px;
   }
+}
+.burger_menu {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+  width: 212px;
+  height: 634px;
+  box-sizing: border-box;
+  position: absolute;
+  top: 76px;
+  right: -245px;
+  transition: right 0.3s;
+  z-index: 1;
+}
+
+#burger {
+  visibility: hidden;
+}
+#burger:checked ~ .burger_menu {
+  right: -490px;
+}
+
+.box-content {
+  overflow: hidden;
 }/*# sourceMappingURL=style.css.map */

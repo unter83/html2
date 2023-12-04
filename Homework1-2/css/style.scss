@@ -50,6 +50,7 @@ a {text-decoration: none;}
     justify-content: center;
     align-items: center;
     gap: 0.58vw;
+    
 
     & img {
         width: 50vw;
@@ -109,13 +110,19 @@ a {text-decoration: none;}
     }
 
     &8 {
-        color: #636363;
+        color: $color-text;
     }
 }
 
 
 .lato {
-    font-family: Lato;
+    font-family: Lato, sans-serif;
+    font-style: normal;
+    line-height: normal;
+}
+
+.roboto {
+    font-family: 'Roboto', sans-serif;
     font-style: normal;
     line-height: normal;
 }
@@ -126,6 +133,10 @@ a {text-decoration: none;}
 
 .normal {
     font-weight: 700;
+}
+
+.normal600 {
+    font-weight: 600;
 }
 
 .thin {
@@ -538,10 +549,10 @@ footer {
     fill: white;
 }
 
-.submenu {
-    width: 0px;
-    height: 0px;
-}
+// .submenu {
+//     width: 0px;
+//     height: 0px;
+// }
 
 .icon1 {
     margin-top: 7px;
@@ -560,16 +571,16 @@ footer {
 
 }
 
-.submenu {
-    display: flex;
-    flex-direction: column;
-    margin-top: 21px;
-    background-color: white;
-    width: 212px;
-    height: 634px;
-    z-index: 1;
-    box-shadow: -5px 5px 15px black;
-}
+// .submenu {
+//     display: flex;
+//     flex-direction: column;
+//     margin-top: 21px;
+//     background-color: white;
+//     width: 212px;
+//     height: 634px;
+//     z-index: 1;
+//     box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+// }
 
 .submenu_link:hover .dropdown-content {
     visibility: visible;
@@ -802,4 +813,46 @@ footer {
     .dropdown-content {
         left: -90px;
     }
+}
+
+.burger_menu {
+
+    //     display: flex;
+//     flex-direction: column;
+//     margin-top: 21px;
+//     background-color: white;
+//     width: 212px;
+//     height: 634px;
+//     z-index: 1;
+//     box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+
+
+    background-color: $bg-color;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+    width: 212px;
+    height: 634px;
+    // padding: 32px;
+    box-sizing: border-box;
+    position: absolute;
+    top:76px;
+    right: -$widthBurgerMenu;
+    transition: right .3s;
+    z-index: 1;
+}
+
+
+
+#burger {
+    visibility: hidden;
+
+    &:checked ~ .burger_menu {
+        // display: none;
+        right: -$widthBurgerMenu*2;
+    }
+}
+
+.box-content {
+    overflow: hidden;
 }

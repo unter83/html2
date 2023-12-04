@@ -145,5 +145,15 @@
     display: grid;
     grid-template-columns: repeat(3, 360px);
     // grid-template-rows: repeat(2, 581px);
-    justify-content: center;
+    justify-content: center;    
+
+    &_big {
+        // margin-top: 132px;
+        margin-bottom: 128px;
+        gap: 30px;
+        display: grid;
+        grid-template-columns: repeat(3, 360px);
+        // grid-template-rows: repeat(2, 581px);
+        justify-content: center;    
+    }
 }
