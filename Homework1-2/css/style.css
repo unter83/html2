@@ -96,6 +96,9 @@ a {
 .color8 {
   color: #6F6E6E;
 }
+.color9 {
+  color: #C4C4C4;
+}
 
 .lato {
   font-family: Lato, sans-serif;
@@ -237,6 +240,7 @@ a {
   align-items: center;
   flex-direction: column;
   height: 100%;
+  background-color: #F8F8F8;
 }
 .central__block_mosaic_pic {
   display: flex;
@@ -708,7 +712,7 @@ footer {
   position: absolute;
   top: 76px;
   right: -245px;
-  transition: right 0.3s;
+  transition: right 0.4s;
   z-index: 1;
 }
 
@@ -716,7 +720,7 @@ footer {
   visibility: hidden;
 }
 #burger:checked ~ .burger_menu {
-  right: -490px;
+  right: -690px;
 }
 
 .box-content {

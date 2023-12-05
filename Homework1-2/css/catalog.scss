@@ -124,10 +124,36 @@ summary {
         display:flex;
         gap: 9px;
         align-items: center;
-        ;
     }
 
 }
+
+.catalog_block_mosaic {
+    margin-top: 128px;
+    gap: 30px;
+    display: grid;
+    grid-template-columns: repeat(3, 360px);
+    grid-template-rows: repeat(3, 581px);
+    justify-content: center;   
+
+}
+
+.page_lister {
+    // width: 283px;
+    margin-top: 49px;
+    margin-bottom: 97px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+
+    &_item {
+        display: flex;
+        gap: 20px;
+    }
+}
+
+
 
 
 

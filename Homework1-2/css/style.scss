@@ -112,6 +112,10 @@ a {text-decoration: none;}
     &8 {
         color: $color-text;
     }
+
+    &9 {
+        color: #C4C4C4;
+    }
 }
 
 
@@ -265,6 +269,7 @@ a {text-decoration: none;}
         align-items: center;
         flex-direction: column;
         height: 100%;
+        background-color: #F8F8F8;
     }
 
     &_mosaic_pic {
@@ -838,7 +843,7 @@ footer {
     position: absolute;
     top:76px;
     right: -$widthBurgerMenu;
-    transition: right .3s;
+    transition: right .4s;
     z-index: 1;
 }
 
@@ -849,7 +854,7 @@ footer {
 
     &:checked ~ .burger_menu {
         // display: none;
-        right: -$widthBurgerMenu*2;
+        right: -$widthBurgerMenu*2 - 200;
     }
 }
 

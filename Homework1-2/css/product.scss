@@ -15,6 +15,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
 }
 
 .product_box {
@@ -156,4 +157,29 @@
         // grid-template-rows: repeat(2, 581px);
         justify-content: center;    
     }
+
+}
+
+.left_arrow_box {
+    position: absolute;
+    left: 0;
+    top: 365px;
+    background-color: rgba(42, 42, 42, 0.15);
+    width: 47px;
+    height: 47px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.right_arrow_box {
+    position: absolute;
+    right: 0;
+    top: 365px;
+    background-color: rgba(42, 42, 42, 0.15);
+    width: 47px;
+    height: 47px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
