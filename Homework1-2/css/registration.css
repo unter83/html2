@@ -1,0 +1,57 @@
+.registration {
+  display: grid;
+  grid-template-columns: 359px 127px 654px;
+  padding-top: 64px;
+  padding-bottom: 96px;
+}
+.registration_data {
+  display: flex;
+  flex-direction: column;
+  gap: 81px;
+}
+.registration_name {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.registration_form {
+  height: 45px;
+  color: #222;
+  padding-left: 17px;
+}
+.registration_form::-moz-placeholder {
+  color: #C4C4C4;
+}
+.registration_form::placeholder {
+  color: #C4C4C4;
+}
+.registration_login {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.registration_info {
+  gap: 22px;
+  display: flex;
+  flex-direction: column;
+}
+.registration_info ul {
+  display: flex;
+  flex-direction: column;
+  padding-left: 27px;
+  list-style-image: url("../images/list.svg");
+  gap: 16px;
+}
+
+.join_button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 167px;
+  background-color: #F16D7F;
+  color: #fff;
+  border: 0px;
+  margin-top: 19px;
+  gap: 20px;
+}/*# sourceMappingURL=registration.css.map */
