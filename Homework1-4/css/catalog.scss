@@ -9,10 +9,14 @@ summary {
   }
 
 .filter {
-
-    padding-top: 13px;
-    width: 360px;
-    // margin-top: 51px;
+ 
+    // padding-top: 13px;
+    // width: 360px;
+    width:33%;
+    top: 24px;
+    // display: flex;
+    // align-items: center;
+    // justify-content: start;
     box-sizing: border-box;
     position: relative;
     z-index: 10;
@@ -89,8 +93,11 @@ summary {
 }
 
 .sort {
-    padding-top: 26px;
+    // padding-top: 26px;
+        width: 34%;
     display: flex;
+    align-items: center;
+    justify-content: center;
     gap: 29px;
     // position: absolute;
     // left: 490px;
@@ -122,14 +129,18 @@ summary {
 
     &_check {
         display:flex;
-        gap: 9px;
+        gap: 9px;   
         align-items: center;
     }
 
 }
 
+.blank {
+    width: 33%;
+}
+
 .catalog_block_mosaic {
-    margin-top: 128px;
+    // margin-top: 128px;
     gap: 30px;
     display: grid;
     grid-template-columns: repeat(3, 360px);
@@ -151,6 +162,27 @@ summary {
         display: flex;
         gap: 20px;
     }
+}
+
+@media (max-width: 768px) and (min-width: 375px) {
+
+    .catalog_block_mosaic {
+        // margin-top: 128px;
+        gap:16px;
+       padding-left: 16px;
+       padding-right: 16px;
+        grid-template-columns: repeat(2, 360px);
+        grid-template-rows: repeat(4, 581px);
+    
+    }
+
+    .invisible {
+        visibility:hidden;
+        width: 0;
+        height: 0;
+        order: 1;
+    }
+
 }
 
 

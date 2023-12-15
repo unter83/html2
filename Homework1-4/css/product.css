@@ -152,4 +152,15 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+@media (max-width: 768px) and (min-width: 375px) {
+  .product_box {
+    left: 0%;
+    right: 0%;
+  }
+  .product_block_mosaic {
+    grid-template-columns: repeat(1, 360px);
+    grid-template-rows: repeat(3, 581px);
+  }
 }/*# sourceMappingURL=product.css.map */

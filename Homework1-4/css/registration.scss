@@ -34,6 +34,13 @@
         gap: 20px;
     }
 
+    
+    &_gender {
+        display: flex;
+        gap:11px;
+        font-size: 11px;        
+    }
+
     &_info {
         gap: 22px;
         display: flex;
@@ -45,7 +52,6 @@
             list-style-image: url('../images/list.svg');
             gap: 16px;
         }
-
     }
 }
 
@@ -60,4 +66,13 @@
     border: 0px;
     margin-top: 19px;
     gap: 20px;
+}
+
+@media (max-width: 768px) and (min-width: 375px) {
+    .registration {
+        display: grid;
+        grid-template-columns: 50% 22px 50%;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
 }

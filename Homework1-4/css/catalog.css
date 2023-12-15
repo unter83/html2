@@ -7,8 +7,8 @@ summary::-webkit-details-marker {
 }
 
 .filter {
-  padding-top: 13px;
-  width: 360px;
+  width: 33%;
+  top: 24px;
   box-sizing: border-box;
   position: relative;
   z-index: 10;
@@ -65,8 +65,10 @@ summary::-webkit-details-marker {
 }
 
 .sort {
-  padding-top: 26px;
+  width: 34%;
   display: flex;
+  align-items: center;
+  justify-content: center;
   gap: 29px;
 }
 .sort_details {
@@ -95,8 +97,11 @@ summary::-webkit-details-marker {
   align-items: center;
 }
 
+.blank {
+  width: 33%;
+}
+
 .catalog_block_mosaic {
-  margin-top: 128px;
   gap: 30px;
   display: grid;
   grid-template-columns: repeat(3, 360px);
@@ -115,4 +120,20 @@ summary::-webkit-details-marker {
 .page_lister_item {
   display: flex;
   gap: 20px;
+}
+
+@media (max-width: 768px) and (min-width: 375px) {
+  .catalog_block_mosaic {
+    gap: 16px;
+    padding-left: 16px;
+    padding-right: 16px;
+    grid-template-columns: repeat(2, 360px);
+    grid-template-rows: repeat(4, 581px);
+  }
+  .invisible {
+    visibility: hidden;
+    width: 0;
+    height: 0;
+    order: 1;
+  }
 }/*# sourceMappingURL=catalog.css.map */
