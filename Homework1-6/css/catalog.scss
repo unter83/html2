@@ -21,6 +21,8 @@ summary {
     position: relative;
     z-index: 10;
 
+    
+
     &[open] path {
         fill: $second-color;
     }
@@ -37,6 +39,10 @@ summary {
         margin-top: 13px;
         margin-left: 16px;
         margin-bottom: 16px;
+
+        & svg {
+            width: 15px;
+        }
     }
 
     &_sort {
@@ -183,6 +189,59 @@ summary {
         order: 1;
     }
 
+
+
+}
+
+@media (max-width: 375px) {
+
+    .catalog_block_mosaic {
+        // margin-top: 128px;
+    //     gap:16px;
+    //    padding-left: 16px;
+    //    padding-right: 16px;
+        grid-template-columns: repeat(1, 360px);
+        grid-template-rows: repeat(8, 581px);
+    
+    }
+
+    .blank {
+        width: 0%;
+    }
+
+    .sort {
+        // display: flex;
+        width: 73%;
+        align-items: center;
+        justify-content:end;
+        // gap: 29px;
+    }
+
+    
+    .filter_sort {
+        gap: 0px;
+    }
+
+    .sort span {   
+        font-size: 12px;
+    }
+
+    
+
+    .filter_summary {
+        margin-left: 0px;
+    }
+
+    .filter_summary span {
+        // font-size: 0px;
+        width: 0px;
+        visibility: hidden;
+    }
+
+    .filter_summary svg {
+        width: 37.5px;
+
+    }
 }
 
 

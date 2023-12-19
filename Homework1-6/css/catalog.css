@@ -28,6 +28,9 @@ summary::-webkit-details-marker {
   margin-left: 16px;
   margin-bottom: 16px;
 }
+.filter_summary svg {
+  width: 15px;
+}
 .filter_sort {
   height: 132px;
   display: flex;
@@ -135,5 +138,35 @@ summary::-webkit-details-marker {
     width: 0;
     height: 0;
     order: 1;
+  }
+}
+@media (max-width: 375px) {
+  .catalog_block_mosaic {
+    grid-template-columns: repeat(1, 360px);
+    grid-template-rows: repeat(8, 581px);
+  }
+  .blank {
+    width: 0%;
+  }
+  .sort {
+    width: 73%;
+    align-items: center;
+    justify-content: end;
+  }
+  .filter_sort {
+    gap: 0px;
+  }
+  .sort span {
+    font-size: 12px;
+  }
+  .filter_summary {
+    margin-left: 0px;
+  }
+  .filter_summary span {
+    width: 0px;
+    visibility: hidden;
+  }
+  .filter_summary svg {
+    width: 37.5px;
   }
 }/*# sourceMappingURL=catalog.css.map */

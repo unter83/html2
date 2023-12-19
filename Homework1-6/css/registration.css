@@ -47,6 +47,9 @@
   list-style-image: url("../images/list.svg");
   gap: 16px;
 }
+.registration_info li {
+  padding-left: 22px;
+}
 
 .join_button {
   display: flex;
@@ -67,5 +70,19 @@
     grid-template-columns: 50% 22px 50%;
     padding-left: 16px;
     padding-right: 16px;
+  }
+}
+@media (max-width: 375px) {
+  .registration {
+    display: flex;
+    flex-direction: column;
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+  .registration_blank {
+    height: 40px;
+  }
+  .registration_info {
+    font-size: 16px;
   }
 }/*# sourceMappingURL=registration.css.map */
